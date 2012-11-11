@@ -23,6 +23,4 @@ describe Hypem::TrackFavorites do
     its(:users) { should be_a Array }    
   end
   
-  
-  
 end
