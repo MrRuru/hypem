@@ -10,6 +10,7 @@ describe Hypem::Track do
   let(:media_id) { '1jsw9' }
   let(:track_from_hash) { described_class.new(track_hash) }
   let(:track_from_string) { described_class.new(media_id) }
+  let(:track_with_multiple_occurences) { described_class.new("1mahm") }
 
   shared_examples_for "a basic synced instance" do
     its(:media_id) { should be_a String }
@@ -53,6 +54,13 @@ describe Hypem::Track do
   describe "#get" do
     subject do
       VCR.use_cassette("single_track") { track_from_string.get }
+    end
+    it_should_behave_like "a basic synced instance"
+  end
+
+  describe "#get with multiple occurences of the same tracks" do
+    subject do
+      VCR.use_cassette("single_track_with_multiple_occurences") { track_with_multiple_occurences.get }
     end
     it_should_behave_like "a basic synced instance"
   end

@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.hypem.com/playlist/item/1mahm/json/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/html
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.2.3
+      Date:
+      - Thu, 15 Nov 2012 00:22:28 GMT
+      Content-Type:
+      - text/javascript; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=10
+      Set-Cookie:
+      - AUTH=03%3A1634d76d0cceec13f6ad1da48de63904%3A1352938948%3A1391139757%3AA8-FR;
+        expires=Sat, 11-Nov-2028 00:22:28 GMT; path=/; domain=hypem.com
+      X-Hacker:
+      - Hey, if you're reading this, you should drop us an email at hypem.com/contact,
+        maybe we can work together!
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Headers:
+      - ! '*'
+    body:
+      encoding: US-ASCII
+      string: ! '{"version":"1.1","0":{"mediaid":"1mahm","artist":"Soko","title":"I''ll
+        Kill Her (Hannes Fischer Remix)","dateposted":1352906938,"siteid":6825,"sitename":"CHROMEMUSIC","posturl":"http:\/\/www.chromemusic.de\/music\/soko-i-kill-her-hannes-fischer-remix\/","postid":1996677,"loved_count":2388,"posted_count":6,"thumb_url":"http:\/\/static-ak.hypem.net\/thumbs_new\/85\/1996677.png","thumb_url_medium":"http:\/\/static-ak.hypem.net\/thumbs_new\/85\/1996677_120.png","thumb_url_large":"http:\/\/static-ak.hypem.net\/thumbs_new\/85\/1996677_320.png","thumb_url_artist":null,"time":348,"description":"Beautiful
+        house remix of Soko\u2019s \u201cI\u2019ll Kill Her\u201d by Hannes Fischer,
+        who\u2019s going to play @ Yip Yab on December 28th. I Kill Her (Hannes Fischer
+        Remix)","tags":["indie","french","female vocalist","singer-songwriter","pop"],"itunes_link":"http:\/\/hypem.com\/go\/itunes_search\/Soko"},"1":{"mediaid":"8v0p","artist":"Soko","title":"I''ll
+        Kill Her","dateposted":1320345281,"siteid":11067,"sitename":"EARMILK","posturl":"http:\/\/www.earmilk.com\/2011\/11\/03\/soko-i-thought-i-was-an-alien-video\/","postid":1630420,"loved_count":4373,"posted_count":33,"thumb_url":"http:\/\/static-ak.hypem.net\/thumbs_new\/d4\/1630420.png","thumb_url_medium":"http:\/\/static-ak.hypem.net\/thumbs_new\/d4\/1630420_120.png","thumb_url_large":"http:\/\/static-ak.hypem.net\/thumbs_new\/e2\/1615842_320.png","thumb_url_artist":null,"time":232,"description":"Directed
+        by herself, Soko, a delicate french singer-songwriter, has a new music video.
+        This video is also the title track of her forthcoming album I Thought I Was
+        An Alien. Besides how cute she is, \u201cI Thought I Was An Alien\u201d is
+        filled with dry humorous li","tags":["french","indie","female vocalist","cute","pop","singer-songwriter","indie
+        pop","acoustic","funny","melancholic"],"itunes_link":"http:\/\/hypem.com\/go\/itunes_search\/Soko"}}'
+    http_version: 
+  recorded_at: Thu, 15 Nov 2012 00:22:28 GMT
+recorded_with: VCR 2.3.0

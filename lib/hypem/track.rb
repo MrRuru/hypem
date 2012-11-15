@@ -33,6 +33,12 @@ module Hypem
 
     def get
       response = Request.get_data("/playlist/item/#{media_id}")
+
+      # When the response contains two tracks, keep the first (most recent).
+      if response.is_a? Array
+        response = response.first
+      end
+        
       update_from_response response
       self
     end
