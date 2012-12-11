@@ -13,7 +13,7 @@ module Hypem
     end
 
     def get
-      response = Request.get_data(path)
+      response = Request.get_data(path, @page)
       @tracks ||= []
       response.each{|v| tracks << Track.new(v)}
       self
